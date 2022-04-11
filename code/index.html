@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+  <script>
+    mocha.setup('bdd');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+</head>
+
+<body>
+  <script type="module" src="function.js"></script>
+  <script type="module" src="function.test.js"></script>
+
+  <ul class="collapse-list">
+    <li>
+        <input class="collapse-open" type="checkbox" id="collapse-1">
+        <label class="collapse-btn" for="collapse-1">Lista de Compras</label>
+        <div class="collapse-painel">
+            <div class="collapse-inner">
+              <pre id="shopping_list"></pre>
+            </div>
+        </div>
+    </li>
+    <li>
+        <input class="collapse-open" type="checkbox" id="collapse-2">
+        <label class="collapse-btn" for="collapse-2">Lista de Emails</label>
+        <div class="collapse-painel">
+            <div class="collapse-inner">
+              <pre id="email_list"></pre>
+            </div>
+        </div>
+    </li>
+    <li>
+        <input class="collapse-open" type="checkbox" id="collapse-3">
+        <label class="collapse-btn" for="collapse-3">Resultado</label>
+        <div class="collapse-painel">
+            <div class="collapse-inner">
+              <pre id="result"></pre>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<h2>Testes</h2>
+
+<div class="mocha-wrapper">
+  <div id="mocha"></div>
+</div>
+  
+</body>
+
+</html>
